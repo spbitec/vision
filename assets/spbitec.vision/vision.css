@@ -1,0 +1,728 @@
+body {
+  display: none;
+}
+html.it-vision-installed body {
+  display: block;
+}
+.navbar-right [role=it-vision-toggle] {
+  padding: 15px !important;
+}
+.navbar-right [role=it-vision-toggle] i {
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .topnav button[role=it-vision-toggle] {
+    padding: 0;
+    line-height: 34px;
+    color: inherit;
+  }
+  .topnav button[role=it-vision-toggle] i {
+    font-size: 20px;
+    color: inherit;
+  }
+}
+html.spbitec_vision_panel_opened body {
+  padding-top: 150px;
+}
+html.spbitec_vision_panel_opened body .topnav {
+  top: 50px;
+}
+html.spbitec_vision_panel_opened body .it-vision-panel {
+  top: 0px;
+  visibility: visible;
+}
+.it-vision-panel {
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  height: 50px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #000;
+  overflow: hidden;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+  overflow-x: auto;
+}
+.it-vision-panel ._inner_container {
+  height: inherit;
+}
+.it-vision-panel ._inner_container ._inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+.it-vision-panel ._inner_container ._inner ._control_group {
+  display: flex;
+  height: inherit;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px !important;
+}
+.it-vision-panel ._inner_container ._inner ._control_group ._control {
+  cursor: pointer;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.it-vision-panel ._inner_container ._inner ._control_group ._control.active {
+  border-color: #f00;
+}
+.it-vision-panel ._inner_container ._inner ._control_group_images ._control.active {
+  display: none;
+}
+.it-vision-panel ._inner_container ._inner ._brand {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .it-vision-panel ._inner_container ._inner ._brand {
+    display: none;
+  }
+}
+.it-vision-panel [data-value=it-vision-font-family-1] {
+  font-family: 'Arial';
+}
+.it-vision-panel [data-value=it-vision-font-family-2] {
+  font-family: 'Times new roman';
+}
+.it-vision-panel [data-value=it-vision-font-size-1] {
+  font-size: 15px;
+}
+.it-vision-panel [data-value=it-vision-font-size-2] {
+  font-size: 20px;
+}
+.it-vision-panel [data-value=it-vision-font-size-3] {
+  font-size: 25px;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes swing {
+  60% {
+    opacity: .3;
+  }
+}
+@keyframes swing {
+  60% {
+    opacity: .3;
+  }
+}
+html.it-vision .sqGreen {
+  display: none;
+}
+html.it-vision .sqGreen_2 {
+  display: none;
+}
+html.it-vision .it-blocks-blocks {
+  display: none;
+}
+html.it-vision .it-sidebar-group i {
+  display: none;
+}
+html.it-vision .it-sidebar-group a:before {
+  display: none;
+}
+html.it-vision .main .block2 {
+  background: none;
+}
+html.it-vision .main .block4 {
+  background: none;
+}
+html.it-vision #vk_groups {
+  display: none;
+}
+html.it-vision [data-tts=on] {
+  cursor: pointer;
+}
+html.it-vision [data-tts=on]:after {
+  display: inline-block;
+  content: '\f04b';
+  font: normal normal normal 16px/1 FontAwesome !important;
+  cursor: pointer;
+}
+html.it-vision [data-tts-state=loading] {
+  opacity: .2;
+}
+html.it-vision [data-tts-state=loading]:after {
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  content: "\f110";
+}
+html.it-vision [data-tts-state=playing] {
+  -webkit-animation: swing 0.6s linear infinite;
+  -moz-animation: swing 0.6s linear infinite;
+  animation: swing 0.6s linear infinite;
+}
+html.it-vision [data-tts-state=playing]:after {
+  content: "\f04d";
+}
+html.it-vision.it-vision-color-1 body {
+  background-color: #FFF;
+}
+html.it-vision.it-vision-color-1 body * {
+  border-color: #000;
+  color: #000;
+}
+html.it-vision.it-vision-color-1 body a {
+  color: #000 !important;
+  border: none !important;
+}
+html.it-vision.it-vision-color-1 body hr {
+  COLOR: #000;
+  background-color: #000;
+}
+html.it-vision.it-vision-color-1 body .topnav {
+  background: #FFF;
+}
+html.it-vision.it-vision-color-1 body .topnav .logo {
+  background-image: url(/custom/img/logo_03.png) !important;
+}
+html.it-vision.it-vision-color-1 body .main .block3 {
+  background: #FFF;
+}
+html.it-vision.it-vision-color-1 body h1 {
+  background: none;
+  color: #000;
+  padding: 0;
+}
+html.it-vision.it-vision-color-1 body h2 {
+  color: #000;
+}
+html.it-vision.it-vision-color-1 body .b3_style {
+  color: #000;
+}
+html.it-vision.it-vision-color-1 body .footer * {
+  background: #FFF;
+  color: #000;
+}
+html.it-vision.it-vision-color-1 body .main .block4 .media-heading {
+  color: #000;
+}
+html.it-vision.it-vision-color-1 body .insta .insta-text,
+html.it-vision.it-vision-color-1 body .insta .insta-text p {
+  background-color: #000;
+  color: #FFF !important;
+}
+html.it-vision.it-vision-color-1 body .insta .insta-ico,
+html.it-vision.it-vision-color-1 body .insta .insta-ico i {
+  background-color: #000;
+  color: #FFF !important;
+}
+html.it-vision.it-vision-color-1 body .navbar-toggle {
+  background-color: #FFF !important;
+}
+html.it-vision.it-vision-color-1 body .navbar-default .navbar-toggle .icon-bar {
+  background: #000 !important;
+}
+html.it-vision.it-vision-color-1 body .form-control {
+  background: none;
+  border: 2px solid #000;
+  color: #000;
+  font-size: 1.5em;
+  padding: 1.5rem;
+}
+html.it-vision.it-vision-color-1 body button,
+html.it-vision.it-vision-color-1 body [type=submit],
+html.it-vision.it-vision-color-1 body .btn {
+  background: #000;
+  color: #FFF !important;
+  font-size: 1.5em;
+}
+html.it-vision.it-vision-color-1 body .it-sidebar-groups .it-sidebar-group.active a {
+  color: #000 !important;
+}
+html.it-vision.it-vision-color-1 body .it-photo-sections .it-photo-section * {
+  border-color: #000;
+}
+html.it-vision.it-vision-color-1 body .it-photo-sections .it-photo-section ._count {
+  color: #000;
+}
+html.it-vision.it-vision-color-1 body .it-line-active {
+  background-color: #000 !important;
+  color: #FFF !important;
+}
+html.it-vision.it-vision-color-1 body ul.it-line li.li a:hover {
+  color: #FFF !important;
+  background-color: #000 !important;
+}
+html.it-vision.it-vision-color-1 body .it-vision-panel {
+  color: #000;
+  border-color: #000;
+  background: #FFF;
+}
+html.it-vision.it-vision-color-2 body {
+  background-color: #000;
+}
+html.it-vision.it-vision-color-2 body * {
+  border-color: #FFF;
+  color: #FFF;
+}
+html.it-vision.it-vision-color-2 body a {
+  color: #FFF !important;
+  border: none !important;
+}
+html.it-vision.it-vision-color-2 body hr {
+  COLOR: #FFF;
+  background-color: #FFF;
+}
+html.it-vision.it-vision-color-2 body .topnav {
+  background: #000;
+}
+html.it-vision.it-vision-color-2 body .topnav .logo {
+  background-image: url(/custom/img/logo_01.png) !important;
+}
+html.it-vision.it-vision-color-2 body .main .block3 {
+  background: #000;
+}
+html.it-vision.it-vision-color-2 body h1 {
+  background: none;
+  color: #FFF;
+  padding: 0;
+}
+html.it-vision.it-vision-color-2 body h2 {
+  color: #FFF;
+}
+html.it-vision.it-vision-color-2 body .b3_style {
+  color: #FFF;
+}
+html.it-vision.it-vision-color-2 body .footer * {
+  background: #000;
+  color: #FFF;
+}
+html.it-vision.it-vision-color-2 body .main .block4 .media-heading {
+  color: #FFF;
+}
+html.it-vision.it-vision-color-2 body .insta .insta-text,
+html.it-vision.it-vision-color-2 body .insta .insta-text p {
+  background-color: #FFF;
+  color: #000 !important;
+}
+html.it-vision.it-vision-color-2 body .insta .insta-ico,
+html.it-vision.it-vision-color-2 body .insta .insta-ico i {
+  background-color: #FFF;
+  color: #000 !important;
+}
+html.it-vision.it-vision-color-2 body .navbar-toggle {
+  background-color: #000 !important;
+}
+html.it-vision.it-vision-color-2 body .navbar-default .navbar-toggle .icon-bar {
+  background: #FFF !important;
+}
+html.it-vision.it-vision-color-2 body .form-control {
+  background: none;
+  border: 2px solid #FFF;
+  color: #FFF;
+  font-size: 1.5em;
+  padding: 1.5rem;
+}
+html.it-vision.it-vision-color-2 body button,
+html.it-vision.it-vision-color-2 body [type=submit],
+html.it-vision.it-vision-color-2 body .btn {
+  background: #FFF;
+  color: #000 !important;
+  font-size: 1.5em;
+}
+html.it-vision.it-vision-color-2 body .it-sidebar-groups .it-sidebar-group.active a {
+  color: #FFF !important;
+}
+html.it-vision.it-vision-color-2 body .it-photo-sections .it-photo-section * {
+  border-color: #FFF;
+}
+html.it-vision.it-vision-color-2 body .it-photo-sections .it-photo-section ._count {
+  color: #FFF;
+}
+html.it-vision.it-vision-color-2 body .it-line-active {
+  background-color: #FFF !important;
+  color: #000 !important;
+}
+html.it-vision.it-vision-color-2 body ul.it-line li.li a:hover {
+  color: #000 !important;
+  background-color: #FFF !important;
+}
+html.it-vision.it-vision-color-2 body .it-vision-panel {
+  color: #FFF;
+  border-color: #FFF;
+  background: #000;
+}
+html.it-vision.it-vision-color-3 body {
+  background-color: #9DD1FF;
+}
+html.it-vision.it-vision-color-3 body * {
+  border-color: #195183;
+  color: #195183;
+}
+html.it-vision.it-vision-color-3 body a {
+  color: #195183 !important;
+  border: none !important;
+}
+html.it-vision.it-vision-color-3 body hr {
+  COLOR: #195183;
+  background-color: #195183;
+}
+html.it-vision.it-vision-color-3 body .topnav {
+  background: #9DD1FF;
+}
+html.it-vision.it-vision-color-3 body .topnav .logo {
+  background-image: url(/custom/img/logo_03.png) !important;
+}
+html.it-vision.it-vision-color-3 body .main .block3 {
+  background: #9DD1FF;
+}
+html.it-vision.it-vision-color-3 body h1 {
+  background: none;
+  color: #195183;
+  padding: 0;
+}
+html.it-vision.it-vision-color-3 body h2 {
+  color: #195183;
+}
+html.it-vision.it-vision-color-3 body .b3_style {
+  color: #195183;
+}
+html.it-vision.it-vision-color-3 body .footer * {
+  background: #9DD1FF;
+  color: #195183;
+}
+html.it-vision.it-vision-color-3 body .main .block4 .media-heading {
+  color: #195183;
+}
+html.it-vision.it-vision-color-3 body .insta .insta-text,
+html.it-vision.it-vision-color-3 body .insta .insta-text p {
+  background-color: #195183;
+  color: #9DD1FF !important;
+}
+html.it-vision.it-vision-color-3 body .insta .insta-ico,
+html.it-vision.it-vision-color-3 body .insta .insta-ico i {
+  background-color: #195183;
+  color: #9DD1FF !important;
+}
+html.it-vision.it-vision-color-3 body .navbar-toggle {
+  background-color: #9DD1FF !important;
+}
+html.it-vision.it-vision-color-3 body .navbar-default .navbar-toggle .icon-bar {
+  background: #195183 !important;
+}
+html.it-vision.it-vision-color-3 body .form-control {
+  background: none;
+  border: 2px solid #195183;
+  color: #195183;
+  font-size: 1.5em;
+  padding: 1.5rem;
+}
+html.it-vision.it-vision-color-3 body button,
+html.it-vision.it-vision-color-3 body [type=submit],
+html.it-vision.it-vision-color-3 body .btn {
+  background: #195183;
+  color: #9DD1FF !important;
+  font-size: 1.5em;
+}
+html.it-vision.it-vision-color-3 body .it-sidebar-groups .it-sidebar-group.active a {
+  color: #195183 !important;
+}
+html.it-vision.it-vision-color-3 body .it-photo-sections .it-photo-section * {
+  border-color: #195183;
+}
+html.it-vision.it-vision-color-3 body .it-photo-sections .it-photo-section ._count {
+  color: #195183;
+}
+html.it-vision.it-vision-color-3 body .it-line-active {
+  background-color: #195183 !important;
+  color: #9DD1FF !important;
+}
+html.it-vision.it-vision-color-3 body ul.it-line li.li a:hover {
+  color: #9DD1FF !important;
+  background-color: #195183 !important;
+}
+html.it-vision.it-vision-color-3 body .it-vision-panel {
+  color: #195183;
+  border-color: #195183;
+  background: #9DD1FF;
+}
+html.it-vision.it-vision-color-4 body {
+  background-color: #F7F3D6;
+}
+html.it-vision.it-vision-color-4 body * {
+  border-color: #4D4B43;
+  color: #4D4B43;
+}
+html.it-vision.it-vision-color-4 body a {
+  color: #4D4B43 !important;
+  border: none !important;
+}
+html.it-vision.it-vision-color-4 body hr {
+  COLOR: #4D4B43;
+  background-color: #4D4B43;
+}
+html.it-vision.it-vision-color-4 body .topnav {
+  background: #F7F3D6;
+}
+html.it-vision.it-vision-color-4 body .topnav .logo {
+  background-image: url(/custom/img/logo_03.png) !important;
+}
+html.it-vision.it-vision-color-4 body .main .block3 {
+  background: #F7F3D6;
+}
+html.it-vision.it-vision-color-4 body h1 {
+  background: none;
+  color: #4D4B43;
+  padding: 0;
+}
+html.it-vision.it-vision-color-4 body h2 {
+  color: #4D4B43;
+}
+html.it-vision.it-vision-color-4 body .b3_style {
+  color: #4D4B43;
+}
+html.it-vision.it-vision-color-4 body .footer * {
+  background: #F7F3D6;
+  color: #4D4B43;
+}
+html.it-vision.it-vision-color-4 body .main .block4 .media-heading {
+  color: #4D4B43;
+}
+html.it-vision.it-vision-color-4 body .insta .insta-text,
+html.it-vision.it-vision-color-4 body .insta .insta-text p {
+  background-color: #4D4B43;
+  color: #F7F3D6 !important;
+}
+html.it-vision.it-vision-color-4 body .insta .insta-ico,
+html.it-vision.it-vision-color-4 body .insta .insta-ico i {
+  background-color: #4D4B43;
+  color: #F7F3D6 !important;
+}
+html.it-vision.it-vision-color-4 body .navbar-toggle {
+  background-color: #F7F3D6 !important;
+}
+html.it-vision.it-vision-color-4 body .navbar-default .navbar-toggle .icon-bar {
+  background: #4D4B43 !important;
+}
+html.it-vision.it-vision-color-4 body .form-control {
+  background: none;
+  border: 2px solid #4D4B43;
+  color: #4D4B43;
+  font-size: 1.5em;
+  padding: 1.5rem;
+}
+html.it-vision.it-vision-color-4 body button,
+html.it-vision.it-vision-color-4 body [type=submit],
+html.it-vision.it-vision-color-4 body .btn {
+  background: #4D4B43;
+  color: #F7F3D6 !important;
+  font-size: 1.5em;
+}
+html.it-vision.it-vision-color-4 body .it-sidebar-groups .it-sidebar-group.active a {
+  color: #4D4B43 !important;
+}
+html.it-vision.it-vision-color-4 body .it-photo-sections .it-photo-section * {
+  border-color: #4D4B43;
+}
+html.it-vision.it-vision-color-4 body .it-photo-sections .it-photo-section ._count {
+  color: #4D4B43;
+}
+html.it-vision.it-vision-color-4 body .it-line-active {
+  background-color: #4D4B43 !important;
+  color: #F7F3D6 !important;
+}
+html.it-vision.it-vision-color-4 body ul.it-line li.li a:hover {
+  color: #F7F3D6 !important;
+  background-color: #4D4B43 !important;
+}
+html.it-vision.it-vision-color-4 body .it-vision-panel {
+  color: #4D4B43;
+  border-color: #4D4B43;
+  background: #F7F3D6;
+}
+html.it-vision.it-vision-color-5 body {
+  background-color: #3B2716;
+}
+html.it-vision.it-vision-color-5 body * {
+  border-color: #A9DD38;
+  color: #A9DD38;
+}
+html.it-vision.it-vision-color-5 body a {
+  color: #A9DD38 !important;
+  border: none !important;
+}
+html.it-vision.it-vision-color-5 body hr {
+  COLOR: #A9DD38;
+  background-color: #A9DD38;
+}
+html.it-vision.it-vision-color-5 body .topnav {
+  background: #3B2716;
+}
+html.it-vision.it-vision-color-5 body .topnav .logo {
+  background-image: url(/custom/img/logo_01.png) !important;
+}
+html.it-vision.it-vision-color-5 body .main .block3 {
+  background: #3B2716;
+}
+html.it-vision.it-vision-color-5 body h1 {
+  background: none;
+  color: #A9DD38;
+  padding: 0;
+}
+html.it-vision.it-vision-color-5 body h2 {
+  color: #A9DD38;
+}
+html.it-vision.it-vision-color-5 body .b3_style {
+  color: #A9DD38;
+}
+html.it-vision.it-vision-color-5 body .footer * {
+  background: #3B2716;
+  color: #A9DD38;
+}
+html.it-vision.it-vision-color-5 body .main .block4 .media-heading {
+  color: #A9DD38;
+}
+html.it-vision.it-vision-color-5 body .insta .insta-text,
+html.it-vision.it-vision-color-5 body .insta .insta-text p {
+  background-color: #A9DD38;
+  color: #3B2716 !important;
+}
+html.it-vision.it-vision-color-5 body .insta .insta-ico,
+html.it-vision.it-vision-color-5 body .insta .insta-ico i {
+  background-color: #A9DD38;
+  color: #3B2716 !important;
+}
+html.it-vision.it-vision-color-5 body .navbar-toggle {
+  background-color: #3B2716 !important;
+}
+html.it-vision.it-vision-color-5 body .navbar-default .navbar-toggle .icon-bar {
+  background: #A9DD38 !important;
+}
+html.it-vision.it-vision-color-5 body .form-control {
+  background: none;
+  border: 2px solid #A9DD38;
+  color: #A9DD38;
+  font-size: 1.5em;
+  padding: 1.5rem;
+}
+html.it-vision.it-vision-color-5 body button,
+html.it-vision.it-vision-color-5 body [type=submit],
+html.it-vision.it-vision-color-5 body .btn {
+  background: #A9DD38;
+  color: #3B2716 !important;
+  font-size: 1.5em;
+}
+html.it-vision.it-vision-color-5 body .it-sidebar-groups .it-sidebar-group.active a {
+  color: #A9DD38 !important;
+}
+html.it-vision.it-vision-color-5 body .it-photo-sections .it-photo-section * {
+  border-color: #A9DD38;
+}
+html.it-vision.it-vision-color-5 body .it-photo-sections .it-photo-section ._count {
+  color: #A9DD38;
+}
+html.it-vision.it-vision-color-5 body .it-line-active {
+  background-color: #A9DD38 !important;
+  color: #3B2716 !important;
+}
+html.it-vision.it-vision-color-5 body ul.it-line li.li a:hover {
+  color: #3B2716 !important;
+  background-color: #A9DD38 !important;
+}
+html.it-vision.it-vision-color-5 body .it-vision-panel {
+  color: #A9DD38;
+  border-color: #A9DD38;
+  background: #3B2716;
+}
+html.it-vision.it-vision-font-size-1 body,
+html.it-vision.it-vision-font-size-1 .navbar-default .navbar-nav>li>a {
+  font-size: 18px;
+}
+html.it-vision.it-vision-font-size-1 .it-page-search i.fa {
+  right: 1rem;
+  top: 18px;
+}
+html.it-vision.it-vision-font-size-2 body,
+html.it-vision.it-vision-font-size-2 .navbar-default .navbar-nav>li>a {
+  font-size: 23px;
+}
+html.it-vision.it-vision-font-size-2 .it-page-search i.fa {
+  right: 1rem;
+  top: 14px;
+}
+html.it-vision.it-vision-font-size-3 body,
+html.it-vision.it-vision-font-size-3 .navbar-default .navbar-nav>li>a {
+  font-size: 28px;
+}
+html.it-vision.it-vision-font-size-3 .it-page-search i.fa {
+  right: 1rem;
+  top: 11px;
+}
+html.it-vision.it-vision-font-family-1 {
+  font-family: 'Arial', sans-serif;
+}
+html.it-vision.it-vision-font-family-1 body {
+  font-family: 'Arial', sans-serif;
+}
+html.it-vision.it-vision-font-family-2 {
+  font-family: 'Times new roman';
+}
+html.it-vision.it-vision-font-family-2 body {
+  font-family: 'Times new roman';
+}
+html.it-vision.it-vision-images-off img {
+  display: none;
+}
+html.it-vision.it-vision-images-off .main .block1 {
+  display: none;
+}
+html.it-vision.it-vision-images-off .main .block2 {
+  margin-top: 3rem;
+}
+html.it-vision.it-vision-images-off .newsImg-wrapper {
+  display: none;
+}
+html.it-vision.it-vision-images-off .it-arendator ._logo {
+  display: none;
+}
+html.it-vision.it-vision-images-off .newsItem .newsImg {
+  display: none;
+}
+html.it-vision.it-vision-images-off .newsItems .newsItem {
+  height: auto;
+}
+html.it-vision.it-vision-images-off .it-plan-rooms {
+  display: none;
+}
+html.it-vision.it-vision-images-off .it-photo-section .it-photo-section-i ._img {
+  display: none;
+}
+html.it-vision.it-vision-images-off .it-photo-section .it-photo-section-i {
+  border-top: 1px solid #000;
+}
+html.it-vision.it-vision-images-off #block3 .row>DIV:first-child {
+  display: none;
+}
+html.it-vision.it-vision-images-off #block3 .row>DIV:last-child {
+  width: 100%;
+}
+html.it-vision.it-vision-images-off .bx-yandex-view-layout {
+  display: none;
+}

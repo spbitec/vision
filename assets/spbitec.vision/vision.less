@@ -1,0 +1,398 @@
+ 
+
+/*############## Мерцание при загрузке  ######################################## */
+
+body{
+   display:none;
+}
+
+html.it-vision-installed body{
+   display:block;
+}
+
+.navbar-right [role=it-vision-toggle]{
+   padding: 15px!important;
+}
+
+.navbar-right [role=it-vision-toggle] i{
+	font-size:20px;
+}
+
+@media (max-width: 768px){
+   .topnav{
+      button[role=it-vision-toggle]{
+         padding:0; 
+         line-height: 34px;
+         color:inherit;
+         
+         i{
+            font-size:20px;
+            color:inherit;
+         }
+      }
+   }
+}
+
+
+
+/*############## Панель  ######################################## */
+
+
+html.spbitec_vision_panel_opened{
+   body {
+      padding-top:150px;
+
+      .topnav{
+         top:50px;
+      }
+
+      .it-vision-panel{
+         top:0px;
+         visibility:visible;
+         
+        
+      }
+
+   
+
+   }
+}
+
+.it-vision-panel{
+   visibility:hidden;
+   -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;
+
+   height:50px;
+   box-sizing:border-box;
+
+   border-bottom:2px solid #000;
+   overflow:hidden;
+   position:fixed;
+   top:-50px;
+   width:100%;
+   background:#fff;
+   z-index:100;
+   overflow-x: auto;
+   
+   ._inner_container{
+      height: inherit;
+
+      ._inner{
+         display:flex;
+         justify-content: space-between;
+         align-items:center;
+         height:inherit;      
+
+         ._control_group{
+            display:flex;
+            height:inherit;
+            justify-content: space-between;
+            align-items:center;
+            font-size:20px!important;            
+
+            ._control{
+               cursor:pointer;
+               overflow:hidden;
+               width:40px;
+               height:40px;               
+               border:2px solid transparent;
+               box-sizing:border-box;
+               text-align:center;
+               align-items:center;
+               justify-content: center;
+               display:flex;
+
+               &.active{
+                  border-color:#f00;
+               }
+            }                        
+         }
+
+         ._control_group_images{            
+            ._control.active{
+               display:none;
+            }
+         }
+         
+         ._brand{
+            cursor:pointer;
+            
+            @media (max-width: 768px){
+         		display:none;
+            }
+
+         }
+         
+     
+      }
+   }
+
+
+   [data-value=it-vision-font-family-1]{
+      font-family: 'Arial';
+   }   
+   [data-value=it-vision-font-family-2]{
+      font-family: 'Times new roman';
+   }
+
+   [data-value=it-vision-font-size-1]{
+      font-size:15px;
+   }   
+
+   [data-value=it-vision-font-size-2]{
+      font-size:20px;
+   }   
+
+   [data-value=it-vision-font-size-3]{
+      font-size:25px;
+   }   
+
+
+
+}
+
+
+
+/*############## Миксины ######################################## */
+
+.geayscale(){
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   -o-filter: grayscale(100%);
+   filter: grayscale(100%);
+   filter: gray; /* IE 6-9 */	
+}
+
+
+
+.it-vision-color(@bg_color,@color,@logo:'logo_03') {
+   body{
+      background-color:@bg_color;
+      /*.block.block1: .geayscale();*/
+
+      *{
+         border-color:@color;
+         color:@color;
+      }
+
+      a{
+         color:@color!important;
+         border:none!important;
+      }
+
+      hr {         
+         COLOR: @color; 
+         background-color: @color;
+      }      
+
+      .topnav{
+         background: @bg_color;	
+
+         .logo {
+            background-image: url(/custom/img/@{logo}.png)!important;
+         }
+      }
+
+      .main .block3{background:@bg_color;}
+
+      h1{
+         background:none; 
+         color:@color; padding:0
+      }
+
+      h2{      
+         color:@color;
+      }
+
+
+      .b3_style{
+         color:@color;
+      }
+      .footer *{
+         background:@bg_color; 
+         color:@color;
+      }
+      
+      .main .block4 .media-heading{color:@color;}
+      .insta .insta-text, .insta .insta-text p{background-color: @color; color:@bg_color!important;}
+      .insta .insta-ico, .insta .insta-ico i{background-color: @color; color:@bg_color!important;}
+      .navbar-toggle{
+           background-color: @bg_color!important;;
+      }
+     .navbar-default .navbar-toggle .icon-bar{
+           background:@color!important;
+      }
+  
+ 
+      /*--- Формы ------------------------------------------------------------------ */      
+
+      .form-control{background:none; border:2px solid @color; color:@color; font-size:1.5em; padding:1.5rem;}
+
+      button,[type=submit],.btn{
+         background:@color; color:@bg_color!important; font-size:1.5em;
+      }
+
+      /*--- Кафе и рестораны ------------------------------------------------------------------ */      
+      .it-sidebar-groups .it-sidebar-group.active a{
+         color:@color!important;
+      }
+
+      /*--- Фотогалерея ------------------------------------------------------------------ */      
+      .it-photo-sections .it-photo-section *{
+         border-color:@color
+      } 
+      .it-photo-sections .it-photo-section ._count{
+         color:@color;
+      } 
+
+      /*--- Планы ------------------------------------------------------------------ */      
+      .it-line-active{
+         background-color:@color!important;
+         color:@bg_color!important;
+      } 
+      ul.it-line li.li a:hover{ color:@bg_color!important;background-color:@color!important;}
+
+
+      /*--- Панель ----------------------------------------------------------------------- */      
+      .it-vision-panel{
+         color:@color;
+         border-color:@color;
+         background:@bg_color;
+      }
+   }
+}
+
+
+/*############## Стили версии для слабовидящих  ######################################## */
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@-webkit-keyframes swing {
+   60% {
+      opacity:.3; 
+   }
+}
+
+@keyframes swing {
+
+   60% {
+      opacity:.3;
+   }
+}
+
+html.it-vision{
+   .sqGreen{display:none;} 
+   .sqGreen_2{display:none;}
+   .it-blocks-blocks{display:none;}   
+   .it-sidebar-group i{display:none;}
+   .it-sidebar-group a:before{display:none;}
+   .main .block2 {background: none;}
+   .main .block4{background:none;}
+   #vk_groups{display:none;}
+
+   /*############## Плеер ######################################## */   
+
+   [data-tts=on]{ cursor:pointer; }
+   [data-tts=on]:after{display:inline-block; content:'\f04b'; font: normal normal normal 16px/1 FontAwesome!important; cursor:pointer; }
+   [data-tts-state=loading]{opacity:.2}
+   [data-tts-state=loading]:after{
+      -webkit-animation:spin 2s linear infinite;
+      -moz-animation:spin 2s linear infinite;
+      animation:spin 2s linear infinite;
+
+      content: "\f110";
+   }
+   [data-tts-state=playing]{ 
+      -webkit-animation:swing 0.6s linear infinite;
+      -moz-animation:swing 0.6s linear infinite;
+      animation:swing 0.6s linear infinite; 
+   }
+   [data-tts-state=playing]:after{ 
+      content: "\f04d";
+   }
+
+
+   /*############## Цветовая схема 1: Черным по белому ######################################## */
+
+   &.it-vision-color-1{ 
+      .it-vision-color(#FFF,#000,'logo_03');
+   }
+
+   &.it-vision-color-2{ 
+      .it-vision-color(#000,#FFF,'logo_01');
+   }   
+
+   &.it-vision-color-3{ 
+      .it-vision-color(#9DD1FF,#195183);
+   }
+
+   &.it-vision-color-4{ 
+      .it-vision-color(#F7F3D6,#4D4B43);
+   }
+
+   &.it-vision-color-5{ 
+      .it-vision-color(#3B2716,#A9DD38,'logo_01');
+   }
+
+   /*############## Размер шрифта ######################################## */
+
+   &.it-vision-font-size-1{
+      body, .navbar-default .navbar-nav>li>a{
+         font-size:18px;
+      }
+      .it-page-search i.fa {right: 1rem;top: 18px;}
+
+   }
+   &.it-vision-font-size-2{
+      body, .navbar-default .navbar-nav>li>a{
+         font-size:23px;
+      }
+      .it-page-search i.fa {right: 1rem;top: 14px;}
+   }
+   &.it-vision-font-size-3{
+      body, .navbar-default .navbar-nav>li>a{
+         font-size:28px;
+      }
+      .it-page-search i.fa {right: 1rem;top: 11px;}
+
+   }
+
+   /*############## Гарнитура ######################################## */
+
+   &.it-vision-font-family-1{
+      font-family:'Arial', sans-serif;
+      body{
+         font-family:'Arial', sans-serif;
+      }
+   }
+
+   &.it-vision-font-family-2{
+      font-family:'Times new roman';
+      body{
+         font-family:'Times new roman';
+      }
+   }
+
+   /*############## Без картинок: Черным по белому ######################################## */
+
+   &.it-vision-images-off{
+      img{display:none;}
+      .main .block1{display:none;}
+      .main .block2{margin-top:3rem}
+      .newsImg-wrapper{display:none}
+      .it-arendator ._logo{display:none}
+      .newsItem .newsImg{display:none}
+      .newsItems .newsItem{height:auto;}
+      .it-plan-rooms{display:none}
+      .it-photo-section .it-photo-section-i ._img{display:none;}
+      .it-photo-section .it-photo-section-i{border-top:1px solid #000;}
+      
+      #block3 .row>DIV:first-child{display:none}
+      #block3 .row>DIV:last-child{width:100%}
+      
+      .bx-yandex-view-layout{display:none;}
+   }
+}
