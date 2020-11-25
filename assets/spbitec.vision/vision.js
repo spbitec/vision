@@ -1,5 +1,5 @@
 
-/*#######  Инициализация ########################### */
+/*#######  РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ ########################### */
 
 
 
@@ -23,7 +23,7 @@ $(function(){
       dom:function(){
       	var control;
 
-         $('[role=it-right-navbar]').append('<li title="Версия для слабовидящих"><a role="it-vision-toggle" ><i class="fa fa-eye-slash" aria-hidden="true"></i></a></li>');
+         $('[role=it-right-navbar]').append('<li title="Р’РµСЂСЃРёСЏ РґР»СЏ СЃР»Р°Р±РѕРІРёРґСЏС‰РёС…"><a role="it-vision-toggle" ><i class="fa fa-eye-slash" aria-hidden="true"></i></a></li>');
          $('.topnav .navbar-header').append('<button type="button" class="navbar-toggle" role="it-vision-toggle"  ><i class="fa fa-eye-slash" aria-hidden="true"></i></button>');	
 
          var panel_outer=$("<div class='it-vision-panel' />");
@@ -35,7 +35,7 @@ $(function(){
          panel.append(brand); 
  
          control=$("<div class='_control_group _control_group_color' role='itv_selector_group' data-name='itVisionColor' />");
-         control.append("<div class='_control_title'>Цвет:</div>");
+         control.append("<div class='_control_title'>Р¦РІРµС‚:</div>");
          control.append("<div role='itv_selector' data-value='it-vision-color-1' class='_control' >1</div>");
          control.append("<div role='itv_selector' data-value='it-vision-color-2' class='_control' >2</div>");
          control.append("<div role='itv_selector' data-value='it-vision-color-3' class='_control' >3</div>");
@@ -44,22 +44,22 @@ $(function(){
          panel.append(control); 
  
 			control=$("<div class='_control_group _control_group_font_family' role='itv_selector_group' data-name='itVisionFontFamily' />");
-         control.append("<div class='_control_title'>Шрифт:</div>");
+         control.append("<div class='_control_title'>РЁСЂРёС„С‚:</div>");
          control.append("<div role='itv_selector' data-value='it-vision-font-family-1' class='_control' >A</div>");
          control.append("<div role='itv_selector' data-value='it-vision-font-family-2' class='_control' >A</div>");
          panel.append(control); 
          
 			control=$("<div class='_control_group _control_group_font_size' role='itv_selector_group' data-name='itVisionFontSize' />");
-         control.append("<div class='_control_title'>Размер:</div>");
+         control.append("<div class='_control_title'>Р Р°Р·РјРµСЂ:</div>");
          control.append("<div role='itv_selector' data-value='it-vision-font-size-1' class='_control' >A</div>");
          control.append("<div role='itv_selector' data-value='it-vision-font-size-2' class='_control' >A</div>");
          control.append("<div role='itv_selector' data-value='it-vision-font-size-3' class='_control' >A</div>");
          panel.append(control); 
          
 			control=$("<div class='_control_group _control_group_images' role='itv_selector_group' data-name='itVisionImages' />");
-         control.append("<div class='_control_title'>Изображения:</div>");
-         control.append("<div role='itv_selector' data-value='it-vision-images-on' title='Включить изображения' class='_control' ><i class='fa fa-toggle-off'></i></div>");
-         control.append("<div role='itv_selector' data-value='it-vision-images-off' title='Отключить изображения' class='_control' ><i class='fa fa-toggle-on'></i></div>");
+         control.append("<div class='_control_title'>РР·РѕР±СЂР°Р¶РµРЅРёСЏ:</div>");
+         control.append("<div role='itv_selector' data-value='it-vision-images-on' title='Р’РєР»СЋС‡РёС‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ' class='_control' ><i class='fa fa-toggle-off'></i></div>");
+         control.append("<div role='itv_selector' data-value='it-vision-images-off' title='РћС‚РєР»СЋС‡РёС‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ' class='_control' ><i class='fa fa-toggle-on'></i></div>");
          panel.append(control); 
  
          panel_outer_1.append(panel); 
@@ -121,7 +121,7 @@ $(function(){
       
       events:function(){
       
-     	 /*#######  Селекторы ########################### */
+     	 /*#######  РЎРµР»РµРєС‚РѕСЂС‹ ########################### */
          $(document).on('click','[role="itv_selector"]',function(){ 
             var $param=$(this).closest('[role="itv_selector_group"]');
             var name=$param.data('name');
@@ -130,7 +130,7 @@ $(function(){
             it_vision.save_config();
          });
          
-         /*#######  Переключатель ########################### */
+         /*#######  РџРµСЂРµРєР»СЋС‡Р°С‚РµР»СЊ ########################### */
          $(document).on('click','[role="it-vision-toggle"]',function(){ 
             if (it_vision.config['panel_opened']){
                it_vision.config['panel_opened']=false;
@@ -156,14 +156,14 @@ $(function(){
             	var t=$(this).text().trim();               
                
                if (t.length>1 && canPlayMmp3){
-               	$(this).attr('data-tts','on').attr('title','Прослушать');
+               	$(this).attr('data-tts','on').attr('title','РџСЂРѕСЃР»СѓС€Р°С‚СЊ');
                   
                }else{
                	$(this).attr('data-tts','off');
                }              
             })    
             
-            /*#######  Переключатель ########################### */
+            /*#######  РџРµСЂРµРєР»СЋС‡Р°С‚РµР»СЊ ########################### */
             $(document).on('click','html.it-vision [data-tts]',function(){
                if ($(this).attr('data-tts-state')=='playing'){
                	$(this).attr('data-tts-state','ended'); 

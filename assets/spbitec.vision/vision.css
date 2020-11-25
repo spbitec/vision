@@ -6,13 +6,13 @@ html.it-vision-installed body {
 }
 .navbar-right [role=it-vision-toggle] {
   padding: 15px !important;
-}
+}  
 .navbar-right [role=it-vision-toggle] i {
   font-size: 20px;
 }
 @media (max-width: 768px) {
   .topnav button[role=it-vision-toggle] {
-    padding: 0;
+    padding: 0; 
     line-height: 34px;
     color: inherit;
   }
